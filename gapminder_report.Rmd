@@ -18,4 +18,14 @@ First we'll do some summary statistics on the dataset.
 summary(gap.data.in)
 ```
 
+Next we would like to do three things:
+
+1. Write this list
+2. Do some stats
+3. Make it look good
+
+We could also do them in any order:
+
+* This is one way
+* Here is another
 
