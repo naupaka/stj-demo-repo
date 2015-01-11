@@ -5,18 +5,17 @@ date: "January 11, 2015"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The goal of this report is to analyze some of the data in the gapminder global health dataset using `ggplot2`.
 
 ```{r}
-summary(cars)
+library("ggplot2")
+gap.data.in <- read.delim("output/combined_gapMinder.tsv", header=TRUE,sep="\t")
 ```
 
-You can also embed plots, for example:
+First we'll do some summary statistics on the dataset.
 
-```{r, echo=FALSE}
-plot(cars)
+```{r}
+summary(gap.data.in)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. The sum of 2 + 2 = `r 2+2`.
+
